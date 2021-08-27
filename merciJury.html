@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Biblio</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>        
+		<img src="Images/bandeau-livresT.jpg" alt="logo" id="bandeau">
+		<header id="header">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="reglement.html">Réglement</a>
+                <a href="participez.html">Participez</a>
+                <a href="participants.html">Participants</a>
+                <a href="laureats.html">Lauréats</a>
+                <a href="jury.html">Jury</a>
+                <button id="btnConnexion" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connexion</button>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="afficherMenu()">
+                    <div onclick="hamburger(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+            </div>
+              <!--  
+                            <li class="sous"></li><a href="laureats.html#2020">2020</a></li>
+                            <li class="sous"><a href="laureats.html#2019">2019</a></li>
+                            <li class="sous"><a href="laureats.html#2018">2018</a></li>
+                            <li class="sous"><a href="laureats.html#2017">2017</a></li>
+                            <li class="sous"><a href="laureats.html#2016">2016</a></li>
+                            <li class="sous"><a href="laureats.html#2015">2015</a></li>
+              -->
+               
+            
+                               
+        </header>
+        <!--fin de l'entete-->
+        <div id="content">
+         
+                <p class="form-style textarea-field">
+                  
+                  Merci pour ces informations, nous vous enverrons un mail pour vous confirmer ou infirmer votre selection comme membre du jury 2021, et vous donner le cas échéant vos identifiants de connexion (login et mot de passe provisoire) afin de pouvoir choisir la catégorie pour laquelle vous souhaitez évaluer les oeuvres et ainsi commencer à les noter.  
+                </p>
+           <!-- Formulaire de connexion-->
+           <div id="id01" class="modal">
+  
+            <form class="modal-content animate">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="Images/avatar.jpg" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label><b>Login</b></label>
+                <input type="text" placeholder="Entrez votre login" name="uname" required>
+          
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrez votre mot de passe" name="psw" required>
+                <div id="btns"> 
+                <button onclick="window.location.href = 'choixMotDePasseAuteur.html';" class="btn1" type="submit">Connexion auteur</button>
+                <button onclick="window.location.href = 'choixMotDePasseJury.html';" class="btn1" type="submit">Connexion juré</button>
+                <button onclick="window.location.href = '';" class="btn1" type="submit">Connexion administrateur</button>
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+                <span class="psw">Mot de passe <a href="#">oublié?</a></span>
+              </div>
+            </form>
+        </div>
+        <!-- Fin formulaire de connexion-->  
+      </div>
+        <footer>
+          <div></div>
+          <div>&copy; SA Biblio</div>
+          <div>
+              <a href="https://www.facebook.com/loisirsculturelsetartistiques/?fref=ts" ><img class="reseaux" src="Images/Facebook.jpg" alt="facebook"/></a>
+              <a href="https://twitter.com/AcadGoncourt" ><img class="reseaux" src="Images/twitter.png" alt="twitter"/></a>
+              <a href="https://www.instagram.com/goncourt.lyceens/" ><img class="reseaux" src="Images/instagram.jpg" alt="instagram"/></a>
+          </div>
+      
+  </footer>
+  <script src="biblio.js"></script>
+</body>
+</html>

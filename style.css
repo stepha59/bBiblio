@@ -1,0 +1,659 @@
+/*Responsive*/
+@media screen and (max-width: 600px)
+{
+ /*.topnav li:not(:first-child) {display:none;}
+ .visuelLivre {width:80%;}
+ #categories {display:contents;}
+ #listeAnnees {display:flex;
+ justify-content:space-between;}
+ /*.laureat2020 {
+    display: grid;
+    grid-template-rows: 5% 35% 60%;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;      
+                }*/
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+#categories {
+display: inline;
+
+}
+}
+/*fin responsive*/
+
+#bandeau {
+    width: 100%;	
+}
+.content {
+  padding: 5px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 300px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    max-width: 2000px;
+}
+/*menu principal*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a, #btnConnexion {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #btnConnexion {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+  .topnav a:hover, #btnConnexion:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #12248d67;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+.sous {
+    display:none;    
+}
+
+.topnav a:hover .sous {
+    display: block;
+	color:white;
+    left:0px;    
+    z-index: 1000;
+	background-color:black;
+	font-size:1.5em;
+	padding: 7px 65px;	
+}
+.sous:hover {
+	transform: scale(1.2);
+	transition:all 0.5;
+}
+.sous li {
+    float:none;
+    border-bottom: 1px solid;
+}
+.sous li a {
+    display: block;
+    padding: 15px 30px;
+    width:20px;
+}
+/*fin menu principal*/
+
+/*menu hamburger*/
+.icon {
+    display:block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/*fin menu hamburger*/
+
+/*footer*/
+footer {
+    background-color: #131A22;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content:space-around;
+}
+footer p {
+    text-align:center;
+}
+.reseaux {
+  max-height: 35px;
+  border-radius: 5px;
+}
+/*participants*/
+.listeLivres {
+    display: grid;
+}
+.ficheLivre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    margin-bottom: 1em;        
+}
+.ficheLivreJury {
+  display: grid;
+  grid-template-columns: 18% 30% 52%;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  margin-bottom: 1em;        
+}
+.presLivre {
+    display: grid;
+    grid-template-rows: 25% 15% 15% 15% 30%;
+}
+.presLivreJury {
+  display: grid;
+  grid-template-rows: 20% 15% 15% 25% 10%;
+}
+.titreLivre {
+    font-size: 28px;
+}
+.noteLivre {
+  font-size: 28px;
+    
+}
+.notes {
+  display: grid;
+}
+.critere {
+  display: flex;
+  justify-content: space-between;
+}
+.visuelLivre {
+   max-height: 300px;
+   object-fit: cover;
+}
+.pitchLivre {
+    font-style: italic;
+}
+.contenu {
+    display:grid;
+    grid-template-columns: 15% 85%;
+}
+.pictLivre {
+    display: flex;
+    justify-content:space-around;
+}
+#categories {
+
+    border-right-style: solid;
+    border-right-color: grey;
+    position: sticky;
+       
+    top: 350px;
+
+  padding: 0px;
+    
+}
+.colonneDrte {
+  display: block;
+  float: right;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+/*réglement*/
+#titreRegl {
+    font-size: 4em;
+    color: #da2b3c;
+    text-align: center;
+}
+/*accueil*/
+.vignetCateg {
+    display: flex;
+}
+.vignetCateg img {
+    padding: 10px;
+    max-width: 100%;
+}
+.vignetCateg img:hover {
+    transform: scale(0.9);
+}
+
+#lienLaureats {
+    font-family: "PT Sans", Sans-serif;
+    fill: #0c0c0c;
+    color: #0c0c0c;
+    background-color: #f1eff0;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;  
+    padding: 15px;  
+    border-radius: 0.5em;
+}
+#lienLaureats:hover {
+    background-color: #da2b3c;
+    color: white;
+    align-items: center;
+}
+#btnLaureats {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+#dernierLaureat {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 4% 20%;
+}
+.laureat2020 {
+    display: grid;
+    grid-template-rows: 5% 65% 30%;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;  
+    
+}
+.categAccueil {
+    text-align: center;
+    margin-top: 0em;    
+}
+
+/* page gagnant */
+.ficheAuteur {
+  font-family: Roboto,sans-serif;
+    display: grid;
+    width: 80%;
+    grid-template-areas: "picAuteur nom"
+                         "picAuteur bio"
+                         "picAuteur bio"
+                         "titre picLivre"
+                         "editeur picLivre"
+                         "pitch picLivre"
+                         "lien picLivre";
+    grid-template-rows: 10% 40% 10% 7% 3% 15% 25%;
+    grid-template-columns: 50% 50%;
+    
+     
+  }
+  
+  .ficheAuteur > .picAuteur {
+    grid-area: picAuteur;
+    
+    display: flex;
+    justify-content: center;
+     }
+    .ficheAuteur > .picAuteur > img {
+        max-height: 350px;
+         }  
+  
+  .ficheAuteur > .auteurLivre {
+    grid-area: nom;
+    font-weight: 400;
+    font-size: 3em;
+  }
+  
+  .ficheAuteur > .bioAuteur {
+    grid-area: bio;
+    margin: 30px 20px 0;
+    font-size: 1em;
+  }
+  
+  .ficheAuteur > .visuelLivre {
+    grid-area: picLivre;
+    
+    display: flex;
+    justify-content: center;
+  }
+  .ficheAuteur > .visuelLivre > img {
+    height: 230px;
+  }  
+  .ficheAuteur > .titreLivre {
+    grid-area: titre;
+    font-size: 2.5em;
+  }
+
+  .ficheAuteur > .editeurLivre {
+    grid-area: editeur;   
+  }
+
+  .ficheAuteur > .pitchLivre {
+    grid-area: pitch;
+    margin: 30px 20px 0;
+    font-size: 1em;
+  }
+  .ficheAuteur > .lienBoutique {
+    grid-area: lien;
+    font-size: 1em;
+    display: flex;
+  }
+  .ficheAuteur > .lienBoutique > img {
+    width: 30%;
+  }
+  
+  /* fin page gagnant */
+
+  /* formulaire inscription auteur */
+  .form-style{
+    max-width: 650px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .form-style label{
+    display:block;
+    margin-bottom: 10px;
+  }
+  .form-style label > span{
+    float: left;
+    width: 550px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  .form-style fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #90919c;
+    padding: 20px;
+    background: #90919c;
+    box-shadow: inset 0px 0px 15px #90919c;
+    -moz-box-shadow: inset 0px 0px 15px #90919c;
+    -webkit-box-shadow: inset 0px 0px 15px #90919c;
+  }
+  .form-style fieldset legend{
+    
+    border-top: 1px solid #90919c;
+    border-left: 1px solid #90919c;
+    border-right: 1px solid #90919c;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #3b579285;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .form-style textarea{
+    width:290px;
+    height:100px;
+  }
+  .form-style input[type=text],
+  .form-style input[type=date],
+  .form-style input[type=datetime],
+  .form-style input[type=number],
+  .form-style input[type=search],
+  .form-style input[type=time],
+  .form-style input[type=url],
+  .form-style input[type=email],
+  .form-style select, 
+  .form-style textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #90919c;
+    outline: none;
+    color: #90919c;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #90919c;
+    -moz-box-shadow: inset 1px 1px 4px #90919c;
+    -webkit-box-shadow: inset 1px 1px 4px #90919c;
+    background: white;
+    width:50%;
+  }
+  .form-style  input[type=submit],
+  .form-style  input[type=button],
+  .form-style  div {
+    background: #90919c;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    box-shadow: inset -1px -1px 3px #90919c;
+    -moz-box-shadow: inset -1px -1px 3px #90919c;
+    -webkit-box-shadow: inset -1px -1px 3px #90919c;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;	
+    font-weight: bold;
+  }
+  .required{
+    color:red;
+    font-weight:normal;
+  }  
+/*Forulaire de connexion*/
+   
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ 
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.btns {
+  display:flex;
+  
+}
+.btn1 {
+  border: 2px solid white ;
+}
+
+ 
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+ 
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+img.visuNote {
+  width: 10%;  
+}
+.formNote {
+  display: grid;   
+}
+.formuNote {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+  
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+  
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+ 
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+  
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+ 
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+} 
+/* notation  */
+    .stars {
+      display: inline-flex;
+      justify-content: center;
+      font-size: 2em;
+    }
+  
+/* formulaire de contact */    
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #5533258f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #0c220d;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+
+ #listeAdmin {
+   display: grid;
+   grid-template-areas: "aut jur"
+                       "aut2 jur2";
+ }
+ #listeAdmin #autInsc{
+   grid-area: aut;
+ }
+ #listeAdmin #jurInsc{
+  grid-area: jur;
+}
+#listeAdmin #autVal{
+  grid-area: aut2;
+}
+#listeAdmin #jurVal{
+  grid-area: jur2;
+}

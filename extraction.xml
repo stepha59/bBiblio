@@ -1,0 +1,42 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<extraction>
+	<livre>
+		<auteur>
+			Hervé Le Tellier		
+		</auteur>
+		<titre>
+			L'Anomalie
+		</titre>
+		<categorie>
+			Roman français
+		</categorie>
+		<editeur>
+			Gallimard
+		</editeur>
+		<couverture>
+			Images/Couvertures/Anomalie.jpg
+		</couverture>
+		<pitch>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh id vestibulum convallis. Morbi euismod neque massa, at faucibus enim porttitor sit amet. Donec et consequat tortor. Fusce nec convallis felis. Sed ut justo ut odio sollicitudin sagittis eget eget velit.
+		</pitch>
+	</livre>
+	<jure>
+		<nom>
+		XXXXXX
+		</nom>
+		<notes>
+			<style>
+			4
+			</style>
+			<illustrations>
+			6
+			</illustrations>
+			<miseenpage>
+			7
+			</miseenpage>
+			<emotion>
+			5
+			</emotion>
+	</jure>
+</extraction>
+
